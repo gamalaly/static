@@ -10,7 +10,7 @@ pipeline {
               steps {
                withAWS(credentials: 'aws-static', region: 'us-west-2') {
     // do something
-                  s3Upload(file:'index.html', bucket:'instagram-udagram', path:'index.html')
+                  s3Upload(file:'index.html', bucket:'clone-udacity', path:'index.html')
                   sh 'echo "Hello World"'
                   sh '''
                       echo "Multiline shell steps works too"
